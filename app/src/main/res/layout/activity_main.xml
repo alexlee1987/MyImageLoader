@@ -7,18 +7,43 @@
     android:orientation="vertical"
     tools:context="com.lgd.myimageloader.MainActivity">
 
-    <TextView
+    <!--<TextView
         android:id="@+id/sample_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Hello World!" />
+        android:text="Hello World!" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/load_glide_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:text="LoadWithGlide" />
+
+        <Button
+            android:id="@+id/load_imageloader_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:text="LoadWithImageLoader" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imgView"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:scaleType="centerCrop"
         android:layout_gravity="center_horizontal"
+        android:background="#FF00FF"
         android:layout_marginTop="20dp"/>
 
 </LinearLayout>
